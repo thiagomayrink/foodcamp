@@ -6,7 +6,9 @@ font-family: 'Righteous', cursive;
 font-family: 'Roboto', sans-serif;
 (300 / 400 / 700)
 */
-
+body {
+    background: #E5E5E5;
+}
 .topo {
     position: fixed;
     top: 0;
@@ -36,4 +38,13 @@ font-family: 'Roboto', sans-serif;
     background: #E5E5E5;
     margin-top: 129px;
     width: 100%;
+}
+.container-pedidos ul {
+    margin-bottom: 32px;
+    margin-top: 16px;
+    display: flex;
+}
+.container-pedidos span {
+    margin-bottom: 32px
+    
 }
