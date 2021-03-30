@@ -35,16 +35,57 @@ body {
 }
 
 .container-pedidos {
-    background: #E5E5E5;
     margin-top: 129px;
+    margin-bottom: 108px;
+    padding-left: 19px;
     width: 100%;
 }
 .container-pedidos ul {
     margin-bottom: 32px;
     margin-top: 16px;
     display: flex;
+    overflow-x: hidden;
 }
 .container-pedidos span {
-    margin-bottom: 32px
-    
+    margin-bottom: 32px;
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    color: #333;
+}
+.container-prato {
+    font-family: 'Roboto', sans-serif;
+    margin-right: 16px;
+    width: 172px;
+    padding: 19px 13px 20px 15px;
+    background:#FFF;
+    border-radius: 9px;
+    box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.25);
+}
+.container-prato img {
+    border-radius: 4px;
+    margin-bottom: 7px;
+}
+.container-prato p:first-of-type{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: #333;
+}
+.container-prato p:nth-of-type(2){
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: #a6a6a6;
+    margin: 9px 0;
+}
+.container-prato p:last-of-type{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: #000;
 }
