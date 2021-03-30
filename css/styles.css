@@ -43,13 +43,13 @@ body {
     margin-bottom: 32px;
     margin-top: 16px;
     display: flex;
-    overflow: scroll;
+    overflow-x: scroll;
 }
-.container-pedidos ul li {
+.container-pedidos ul {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-.container-pedidos ul li::-webkit-scrollbar { 
+.container-pedidos ul::-webkit-scrollbar {
     display: none;
 }
 .container-pedidos span {
@@ -130,4 +130,73 @@ body {
 }
 .fazer-pedido {
     display: none;
+}
+.container-resumo {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 19px;
+    background: rgba(255, 255, 255, 0.9);
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    z-index: 10;
+    color: #fff;
+    display: none;
+}
+.resumo-pedido {
+    background: #50D074;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 377px;
+    border-radius: 9px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+.resumo-pedido span {
+    font-weight: 700;
+    margin-top: 21px;
+}
+.resumo-pedido div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 28px 25px 12px 25px;
+}
+.resumo-pedido ul:nth-child(2) {
+    text-align: right;
+}
+.resumo-pedido li {
+    margin-bottom: 13px;
+}
+.resumo-pedido li:last-of-type{
+    font-weight: 700;
+}
+.resumo-pedido button {
+    width: 329px;
+    height: 52px;
+    border: none;
+    border-radius: 100px;
+}
+.confirma-pedido {
+    background: #FFFFFF;
+    color: #50D074;
+    font: inherit;
+    font-weight: 700;
+}
+.cancela-pedido {
+    background: none;
+    color: #FFFFFF;
+    font: inherit;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 700;
 }
