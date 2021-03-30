@@ -33,7 +33,6 @@ body {
     letter-spacing: 0em;
     color: #FFFFFF;
 }
-
 .container-pedidos {
     margin-top: 129px;
     margin-bottom: 108px;
@@ -44,7 +43,14 @@ body {
     margin-bottom: 32px;
     margin-top: 16px;
     display: flex;
-    overflow-x: hidden;
+    overflow: scroll;
+}
+.container-pedidos ul li {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.container-pedidos ul li::-webkit-scrollbar { 
+    display: none;
 }
 .container-pedidos span {
     margin-bottom: 32px;
