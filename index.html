@@ -24,84 +24,92 @@
 
         <div class="container-pedidos">
             <span>Primeiro, seu prato</span>
-            <ul>
+            <ul class="refeicoes">
                 <li>
-                    <div class="container-prato selecionado">
+                    <div class="container_item siri" onclick="selecionar_r('siri', 'Hambúrguer de Siri', '11,40')">
                         <img src="img/hamburguer-siri.jpg" alt="Hambúrguer de Siri">
-                        <p id="item">Hambúrguer de Siri</p>
-                        <p id="descrição">Diretamente da fenda do bikini </br>clássico</p>
-                        <p id="preço">R$ 11,40</p>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                        <p>Hambúrguer de Siri</p>
+                        <p>Diretamente da fenda do bikini </br>clássico</p>
+                        <p>R$ 11,40</p>
+                        <p><ion-icon name="checkmark-circle"></ion-icon></p>
                     </div>
                 </li>
                 <li>
-                    <div class="container-prato">
-                        <img src="img/hamburguer-siri.jpg" alt="Hambúrguer de Siri">
-                        <p id="item">Hambúrguer de Siri</p>
-                        <p id="descrição">Diretamente da fenda do bikini </br>queijo extra</p>
-                        <p id="preço">R$ 13,40</p>
+                    <div class="container_item krusty" onclick="selecionar_r('krusty', 'Krusty Burguer', '13,40')">
+                        <img src="img/krusty_burguer.jpg" alt="Krusty Burguer">
+                        <p>Krusty Burguer</p>
+                        <p>Diretamente de Springfield</p>
+                        <p>R$ 13,40</p>
+                        <p><ion-icon name="checkmark-circle"></ion-icon></p>
                     </div>
                 </li>
                 <li>
-                    <div class="container-prato">
-                        <img src="img/hamburguer-siri.jpg" alt="Hambúrguer de Siri">
-                        <p id="item">Hambúrguer de Siri</p>
-                        <p id="descrição">Diretamente da fenda do bikini</br>muito queijo extra</p>
-                        <p id="preço">R$ 15,40</p>
+                    <div class="container_item ramen" onclick="selecionar_r('ramen', 'Ramen do Naruto', '15,40')">
+                        <img src="img/lamen-naruto.jpg" alt="ramen do naruto">
+                        <p>Ramen do Naruto</p>
+                        <p>Diretamente do Mangá <br>impresso em full HD!</p>
+                        <p>R$ 15,40</p>
+                        <p><ion-icon name="checkmark-circle"></ion-icon></p>
                     </div>
                 </li>
             </ul>
             <span>Agora, sua bebida</span>
-            <ul>
+            <ul class="bebidas">
                 <li>
-                    <div class="container-prato">
-                        <img src="img/Butterbeer.jpg" alt="Cerveja Amanteigada">
-                        <p id="item">Cerveja Amanteigada</p>
-                        <p id="descrição">200ml - Contém mais bruxaria do que o javascript</p>
-                        <p id="preço">R$ 10,00</p>
+                    <div class="container_item pequena" onclick="selecionar_b('pequena', 'Cerveja Amanteigada 200', '10,00')">
+                        <img src="img/Butterbeer.jpg" alt="Cerveja Amanteigada 200ml">
+                        <p>Cerveja Amanteigada</p>
+                        <p>200ml - Contém mais bruxaria do que o javascript</p>
+                        <p>R$ 10,00</p>
+                        <p><ion-icon name="checkmark-circle"></ion-icon></p>
                     </div>
                 </li>
                 <li>
-                    <div class="container-prato">
-                        <img src="img/Butterbeer.jpg" alt="Cerveja Amanteigada">
-                        <p id="item">Cerveja Amanteigada</p>
-                        <p id="descrição">300ml - Contém mais bruxaria do que o javascript</p>
-                        <p id="preço">R$ 11,00</p>
+                    <div class="container_item media" onclick="selecionar_b('media', 'Cerveja Amanteigada 300', '11,00')">
+                        <img src="img/Butterbeer.jpg" alt="Cerveja Amanteigada 300ml">
+                        <p>Cerveja Amanteigada</p>
+                        <p>300ml - Contém mais bruxaria do que o javascript</p>
+                        <p>R$ 11,00</p>
+                        <p><ion-icon name="checkmark-circle"></ion-icon></p>
                     </div>
                 </li>
                 <li>
-                    <div class="container-prato">
-                        <img src="img/Butterbeer.jpg" alt="Cerveja Amanteigada">
-                        <p id="item">Cerveja Amanteigada</p>
-                        <p id="descrição">500ml - Contém mais bruxaria do que o javascript</p>
-                        <p id="preço">R$ 13,00</p>
+                    <div class="container_item grande" onclick="selecionar_b('grande', 'Cerveja Amanteigada 500', '13,00')">
+                        <img src="img/Butterbeer.jpg" alt="Cerveja Amanteigada 500ml">
+                        <p>Cerveja Amanteigada</p>
+                        <p>500ml - Contém mais bruxaria do que o javascript</p>
+                        <p>R$ 13,00</p>
+                        <p><ion-icon name="checkmark-circle"></ion-icon></p>
                     </div>
                 </li>
             </ul>
             <span>Por fim, sua sobremesa</span>
-            <ul>
+            <ul class="sobremesas">
                 <li>
-                    <div class="container-prato">
+                    <div class="container_item caramelo" onclick="selecionar_s('caramelo', 'Bala de Caramelo', '0,60')">
                         <img src="img/bala-caramelo.png" alt="Bala de Caramelo">
-                        <p id="item">Bala de Caramelo</p>
-                        <p id="descrição">Aquela bala que tira a obturação</p>
-                        <p id="preço">R$ 0,60</p>
+                        <p>Bala de Caramelo</p>
+                        <p>Aquela bala que tira a obturação</p>
+                        <p>R$ 0,60</p>
+                        <p><ion-icon name="checkmark-circle"></ion-icon></p>
                     </div>
                 </li>
                 <li>
-                    <div class="container-prato">
+                    <div class="container_item chocolate" onclick="selecionar_s('chocolate', 'Bala de Chocolate', '0,70')">
                         <img src="img/bala-caramelo.png" alt="Bala de Chocolate">
-                        <p id="item">Bala de Chocolate</p>
-                        <p id="descrição">Aquela bala que gruda nos dentes</p>
-                        <p id="preço">R$ 0,70</p>
+                        <p>Bala de Chocolate</p>
+                        <p>Aquela bala que gruda nos dentes</p>
+                        <p>R$ 0,70</p>
+                        <p><ion-icon name="checkmark-circle"></ion-icon></p>
                     </div>
                 </li>
                 <li>
-                    <div class="container-prato">
+                    <div class="container_item tamarindo" onclick="selecionar_s('tamarindo', 'Bala de Tamarindo', '0,80')">
                         <img src="img/bala-tamarindo.png" alt="Bala de Tamarindo">
-                        <p id="item">Bala de Tamarindo</p>
-                        <p id="descrição">Aquela bala que quebra os dentes</p>
-                        <p id="preço">R$ 0,80</p>
+                        <p>Bala de Tamarindo</p>
+                        <p>Aquela bala que quebra os dentes</p>
+                        <p>R$ 0,80</p>
+                        <p><ion-icon name="checkmark-circle"></ion-icon></p>
                     </div>
                 </li>
             </ul>
@@ -117,16 +125,16 @@
                 <span>Confirme seu pedido</span>
                 <div>
                     <ul>
-                        <li>item_1</li>
-                        <li>item_2</li>
-                        <li>item_3</li>
+                        <li class="confirma_refeicao">item_1</li>
+                        <li class="confirma_bebida">item_2</li>
+                        <li class="confirma_sobremesa">item_3</li>
                         <li>TOTAL</li>
                     </ul>
                     <ul>
-                        <li>R$_1</li>
-                        <li>R$_2</li>
-                        <li>R$_3</li>
-                        <li>R$_TOTAL</li>
+                        <li class="valor_refeicao">R$_1</li>
+                        <li class="valor_bebida">R$_2</li>
+                        <li class="valor_sobremesa">R$_3</li>
+                        <li class="valor_total">R$_TOTAL</li>
                     </ul>
                 </div>
                 <button class="confirma-pedido">Tudo certo, pode pedir!</button>

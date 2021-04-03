@@ -61,7 +61,7 @@ body {
     letter-spacing: 0.018em;
     color: #333;
 }
-.container-prato {
+.container_item {
     margin-right: 16px;
     width: 172px;
     padding: 19px 13px 20px 15px;
@@ -70,20 +70,20 @@ body {
     border:4px solid #FFF;
     box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.25);
 }
-.container-prato img {
+.container_item img {
     width: 136px;
     height: 87px;
     border-radius: 4px;
     margin-bottom: 7px;
 }
-.container-prato p:first-of-type{
+.container_item p:first-of-type{
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0em;
     color: #333;
 }
-.container-prato p:nth-of-type(2){
+.container_item p:nth-of-type(2){
     font-size: 15px;
     font-weight: 300;
     line-height: 18px;
@@ -91,7 +91,7 @@ body {
     color: #a6a6a6;
     margin: 9px 0;
 }
-.container-prato p:last-of-type{
+.container_item p:last-of-type{
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -210,11 +210,15 @@ body {
     z-index: 1;
 }
 .selecionado ion-icon{
+    display: inline;
     position:absolute;
     right:13px;
     bottom: 16px;
     font-size: 22px;
     color: #32B72F;
+}
+p ion-icon {
+    display: none;
 }
 .escondido {
     display: none;
