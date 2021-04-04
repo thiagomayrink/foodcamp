@@ -163,7 +163,7 @@ body {
     width: 377px;
     border-radius: 9px;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-    text-align: center;
+    text-align: left;
 }
 .resumo-pedido span {
     font-weight: 700;
