@@ -56,28 +56,28 @@
             <span>Agora, sua bebida</span>
             <ul class="bebidas">
                 <li>
-                    <div class="container_item pequena" onclick="selecionar_b('pequena', 'Cerveja Amanteigada 200', '10.15')">
-                        <img src="img/Butterbeer.jpg" alt="Cerveja Amanteigada 200ml">
-                        <p>Cerveja Amanteigada</p>
-                        <p>200ml - Contém mais bruxaria do que o javascript</p>
+                    <div class="container_item Duff" onclick="selecionar_b('Duff', 'Cerveja Duff', '10.15')">
+                        <img src="img/duff-beer.jpg" alt="Cerveja Duff">
+                        <p>Cerveja Duff</p>
+                        <p>Sim, ela existe! Mais uma maravilha de Springfield</p>
                         <p>R$ 10,15</p>
                         <p><ion-icon name="checkmark-circle"></ion-icon></p>
                     </div>
                 </li>
                 <li>
-                    <div class="container_item media" onclick="selecionar_b('media', 'Cerveja Amanteigada 300', '11.99')">
-                        <img src="img/Butterbeer.jpg" alt="Cerveja Amanteigada 300ml">
-                        <p>Cerveja Amanteigada</p>
-                        <p>300ml - Contém mais bruxaria do que o javascript</p>
+                    <div class="container_item Nuka" onclick="selecionar_b('Nuka', 'Nuka-Cola Gelada', '11.99')">
+                        <img src="img/nuka-cola.jpg" alt="Nuka-Cola Gelada">
+                        <p>Nuka-Cola Gelada</p>
+                        <p>Pré venda - Lançamento no ano de 2042</p>
                         <p>R$ 11,99</p>
                         <p><ion-icon name="checkmark-circle"></ion-icon></p>
                     </div>
                 </li>
                 <li>
-                    <div class="container_item grande" onclick="selecionar_b('grande', 'Cerveja Amanteigada 500', '13.97')">
-                        <img src="img/Butterbeer.jpg" alt="Cerveja Amanteigada 500ml">
+                    <div class="container_item Amanteigada" onclick="selecionar_b('Amanteigada', 'Cerveja Amanteigada', '13.97')">
+                        <img src="img/Butterbeer.jpg" alt="Cerveja Amanteigada">
                         <p>Cerveja Amanteigada</p>
-                        <p>500ml - Contém mais bruxaria do que o javascript</p>
+                        <p>Contém mais bruxaria do que o javascript</p>
                         <p>R$ 13,97</p>
                         <p><ion-icon name="checkmark-circle"></ion-icon></p>
                     </div>
@@ -131,6 +131,10 @@
                         <li class="valor-sobremesa">R$_3</li>
                         <li class="valor-total">R$_TOTAL</li>
                     </ul>
+                </div>
+                <div class="dados-entrega">
+                    <p class="nome-cliente">nome</p>
+                    <p class="endereco-cliente">endereco</p>
                 </div>
                 <button class="confirma-pedido" onclick="confirmar_pedido()">Tudo certo, pode pedir!</button>
                 <button class="cancela-pedido" onclick="cancelar()">Cancelar</button>

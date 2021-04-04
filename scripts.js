@@ -74,11 +74,13 @@ function pedir() {
     document.querySelector('.confirma-refeicao').innerHTML = refeicao;
     document.querySelector('.confirma-bebida').innerHTML = bebida;
     document.querySelector('.confirma-sobremesa').innerHTML = sobremesa;
-    document.querySelector('.valor-refeicao').innerHTML = 'R$: ' + valor_r;
-    document.querySelector('.valor-bebida').innerHTML = 'R$: ' + valor_b;
-    document.querySelector('.valor-sobremesa').innerHTML = 'R$: ' + valor_s;
-    document.querySelector('.valor-total').innerHTML = 'R$: ' + valor_total.toFixed(2);
-    
+    document.querySelector('.valor-refeicao').innerHTML = valor_r;
+    document.querySelector('.valor-bebida').innerHTML = valor_b;
+    document.querySelector('.valor-sobremesa').innerHTML = valor_s;
+    document.querySelector('.valor-total').innerHTML = 'R$: '+valor_total.toFixed(2);
+    document.querySelector('.nome-cliente').innerHTML = 'Nome: '+nome_cliente;
+    document.querySelector('.endereco-cliente').innerHTML = 'Endereço: '+endereco_cliente;
+
     const pedido = document.querySelector('.container-resumo');
     pedido.classList.remove('escondido');
 }
