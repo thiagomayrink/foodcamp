@@ -98,6 +98,6 @@ function confirmar_pedido() {
     "\n Total: R$ "+valor_total.toFixed(2)+
     "\n Nome: "+nome_cliente+
     "\n Endereço: "+endereco_cliente);
-    const mensagem_wpp = 'https://wa.me/5524998395477?text='+mensagem;
+    const mensagem_wpp = 'https://wa.me/5500000000000?text='+mensagem;
     window.open(mensagem_wpp);
 }
