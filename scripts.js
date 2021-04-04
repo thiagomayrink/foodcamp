@@ -4,6 +4,9 @@ let sobremesa;
 let valor_r = 0; 
 let valor_b = 0;
 let valor_s = 0;
+let valor_total = 0;
+let nome_cliente;
+let endereco_cliente;
 
 function selecionar_r(item_menu, nome_item, valor_refeicao) {
     refeicao = nome_item;
@@ -63,7 +66,10 @@ function selecionar_s(item_menu, nome_item, valor_refeicao) {
 }
 
 function pedir() {
-    const valor_total = (valor_r + valor_b + valor_s);
+    nome_cliente = prompt('Por favor, informe seu nome: ');
+    endereco_cliente = prompt('Por favor, informe seu endereço: ');
+
+    valor_total = (valor_r + valor_b + valor_s);
 
     document.querySelector('.confirma-refeicao').innerHTML = refeicao;
     document.querySelector('.confirma-bebida').innerHTML = bebida;
@@ -71,7 +77,7 @@ function pedir() {
     document.querySelector('.valor-refeicao').innerHTML = 'R$: ' + valor_r;
     document.querySelector('.valor-bebida').innerHTML = 'R$: ' + valor_b;
     document.querySelector('.valor-sobremesa').innerHTML = 'R$: ' + valor_s;
-    document.querySelector('.valor-total').innerHTML = 'R$: ' + valor_total;
+    document.querySelector('.valor-total').innerHTML = 'R$: ' + valor_total.toFixed(2);
     
     const pedido = document.querySelector('.container-resumo');
     pedido.classList.remove('escondido');
@@ -80,4 +86,16 @@ function pedir() {
 function cancelar() {
     const pedido = document.querySelector('.container-resumo');
     pedido.classList.add('escondido');
+}
+
+function confirmar_pedido() {
+    const mensagem = encodeURIComponent("Olá, gostaria de fazer o pedido:"+
+    "\n - Prato: "+refeicao+
+    "\n - Bebida: "+bebida+
+    "\n - Sobremesa: "+sobremesa+
+    "\n Total: R$ "+valor_total.toFixed(2)+
+    "\n Nome: "+nome_cliente+
+    "\n Endereço: "+endereco_cliente);
+    const mensagem_wpp = 'https://wa.me/5524998395477?text='+mensagem;
+    window.open(mensagem_wpp);
 }
