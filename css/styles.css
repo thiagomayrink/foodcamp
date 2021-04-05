@@ -31,6 +31,7 @@ body {
     margin-bottom: 108px;
     padding-left: 19px;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 .container-pedidos ul {
     margin-bottom: 32px;
@@ -59,7 +60,7 @@ body {
     padding: 19px 13px 20px 15px;
     background:#FFF;
     border-radius: 9px;
-    border:4px solid #FFF;
+    border: 4px solid #FFF;
     box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.25);
 }
 .container_item img {
@@ -83,7 +84,7 @@ body {
     color: #a6a6a6;
     margin: 9px 0;
 }
-.container_item p:last-of-type{
+.container_item p:nth-of-type(3){
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
