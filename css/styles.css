@@ -45,10 +45,10 @@ body {
 .container-pedidos ul::-webkit-scrollbar {
     display: none;
 }
-ul li:first-of-type {
+.container-pedidos ul li:first-of-type {
     margin:0px 0px 0px 19px;
 }
-ul li:last-of-type {
+.container-pedidos ul li:last-of-type {
     padding:0px 3px 0px 0px;
 }
 .container-pedidos span {
