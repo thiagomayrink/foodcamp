@@ -29,7 +29,6 @@ body {
 .container-pedidos {
     margin-top: 129px;
     margin-bottom: 108px;
-    padding-left: 19px;
     width: 100%;
     font-family: 'Roboto', sans-serif;
 }
@@ -46,8 +45,15 @@ body {
 .container-pedidos ul::-webkit-scrollbar {
     display: none;
 }
+ul li:first-of-type {
+    margin:0px 0px 0px 19px;
+}
+ul li:last-of-type {
+    padding:0px 3px 0px 0px;
+}
 .container-pedidos span {
     margin-bottom: 32px;
+    margin-left: 19px;
     font-family: 'Righteous', cursive;
     font-size: 26px;
     line-height: 32px;
@@ -57,6 +63,7 @@ body {
 .container_item {
     margin-right: 16px;
     width: 172px;
+    height: 100%;
     padding: 19px 13px 20px 15px;
     background:#FFF;
     border-radius: 9px;
