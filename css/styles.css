@@ -130,7 +130,6 @@ body {
     background-color: #32B72F;
     font-weight: 700;
 }
-
 .container-resumo {
     position: fixed;
     top:0;
@@ -164,19 +163,25 @@ body {
     font-weight: 700;
     margin-top: 21px;
 }
-.resumo-pedido div {
+.resumo-pedido table {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     padding: 28px 25px 12px 25px;
 }
-.resumo-pedido ul:nth-child(2) {
+.resumo-pedido td:nth-of-type(even) {
     text-align: right;
 }
-.resumo-pedido li {
-    margin-bottom: 13px;
+.resumo-pedido th:nth-of-type(even) {
+    text-align: right;
 }
-.resumo-pedido li:last-of-type{
+.resumo-pedido td {
+    padding: 6px 0px;
+    vertical-align: middle;
+}
+.resumo-pedido th{
+    padding-top: 10px;
+    white-space: nowrap;
+    vertical-align: middle;
     font-weight: 700;
 }
 .resumo-pedido button {
@@ -199,6 +204,8 @@ body {
     line-height: 23px;
     font-weight: 700;
 }
+
+/*Classes dinamicas*/
 .selecionado {
     border:4px solid #32B72F;
     position: relative;
@@ -219,9 +226,14 @@ p ion-icon {
     display: none;
 }
 
+/*Classes do bonus*/
 .dados-entrega {
     display: inherit;
+    width: 100%;
     flex-direction: inherit;
     align-items: flex-start;
     word-break: break-all;
+}
+.dados-entrega p {
+    padding: 0px 25px 12px;
 }
